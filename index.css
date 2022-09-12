@@ -30,6 +30,7 @@ p {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -109,4 +110,10 @@ a:hover {
 
 .projects:hover {
   transform: scale(1.01);
+}
+
+@media (min-width: 550px) {
+  header {
+    flex-direction: row;
+  }
 }
